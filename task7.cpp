@@ -24,6 +24,7 @@ int main() {
         return 0;
     }
 
+    // initialize array
     int* arr = new int[size];
 
     cout << "Enter " << size << " elements:" << endl;
