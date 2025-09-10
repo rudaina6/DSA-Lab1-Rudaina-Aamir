@@ -3,7 +3,7 @@
 using namespace std;
 
 vector<int> findIndices(int array[], int key, int  size) {
-    vector<int> indices;
+    vector<int> indices; //initialize vector to return
     for (int i = 0; i < size; i++) {
         if (array[i] == key) {
             indices.push_back(i);
@@ -17,6 +17,7 @@ int main() {
     cout << "Enter the size of the array: ";
     cin >> size;
 
+    // check for empty array
     if (size == 0) {
         cout << "Index Result: " << endl;
         cout << "Empty array, no elements found.";
@@ -34,6 +35,7 @@ int main() {
     cout << "Enter the key to search in the array: ";
     cin >> key;
 
+    // print results
     vector<int> result = findIndices(arr, key, size);
     cout << "Index Result: ";
     for (int index : result) {
